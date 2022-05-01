@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/glht/glht",
+    "pages/fbxx/fbxx",
+    "pages/swzl/swzl",
+    "pages/fqjb/fqjb",
+    "pages/zwyy/zwyy",
+    "pages/my/my",
+    "pages/qxyy/qxyy",
+    "pages/jdjb/jdjb",
+    "pages/wdyy/wdyy",
+    "pages/tscx/tscx",
+    "pages/dk/dk",
+    "pages/sm/sm",
+    "pages/zwyd/zwyd",
+    "pages/news/news",
+    "pages/getuser/getuser",
+    "pages/grzl/grzl",
+    "pages/xgxx/xgxx",
+    "pages/dkjl/dkjl",
+    "pages/tsxq/tsxq",
+    "pages/swxq/swxq",
+    "pages/wpxx/wpxx",
+    "pages/hdbm/hdbm",
+    "pages/yjfk/yjfk",
+    "pages/fwzx/fwzx",
+    "pages/gywm/gywm",
+    "pages/jbgl/jbgl",
+    "pages/jgglxq/jgglxq"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3742fa",
+    "navigationBarTitleText": "图书馆预约小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/shenghuo.png",
+        "selectedIconPath": "images/shenghuo1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/zwyy/zwyy",
+        "iconPath": "images/xuexiao.png",
+        "selectedIconPath": "images/xuexiao1.png",
+        "text": "座位"
+      },
+      {
+        "pagePath": "pages/dk/dk",
+        "iconPath": "images/guahao.png",
+        "selectedIconPath": "images/guahao1.png",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/tscx/tscx",
+        "iconPath": "images/shoucangjia.png",
+        "selectedIconPath": "images/shoucangjia1.png",
+        "text": "检索"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/tuandui.png",
+        "selectedIconPath": "images/tuandui1.png",
+        "text": "我"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  }
+}
