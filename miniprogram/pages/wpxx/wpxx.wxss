@@ -1,1 +1,14 @@
 /* pages/wpxx/wpxx.wxss */
+.zp{
+  width: 90%;
+  height: 350rpx;
+  margin: 30rpx auto;
+}
+.zp image{
+  width: 100%;
+  height: 100%;
+}
+.wz{
+  line-height: 90rpx;
+  color: rgb(78, 78, 78);
+}

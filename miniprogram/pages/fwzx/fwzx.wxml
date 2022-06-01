@@ -1,2 +1,13 @@
 <!--pages/fwzx/fwzx.wxml-->
-<text>pages/fwzx/fwzx.wxml</text>
+<!--pages/yjfk/yjfk.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+    <mp-msg title="联系客服">
+        <view slot="desc">点击下方按钮，在反馈后第一时间联系您！</view>
+        <view slot="handle">
+            <button class="weui-btn" type="default" open-type="contact">联系客服</button>
+        </view>
+        <view slot="footer">
+            <view class="weui-footer__text">Copyright © 2022-2026 益峰科技</view>
+        </view>
+    </mp-msg>
+</view>

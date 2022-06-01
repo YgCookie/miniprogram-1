@@ -1,2 +1,12 @@
 <!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<view class="news_title">
+  <view class="news-tite1">新闻公告：{{title}}</view>
+  <view class="news-tite2">发布时间：{{time}}</view>
+</view>
+
+  <image src="{{photo}}" mode="scaleToFill"></image>
+
+<view class="news_main">
+  <rich-text class="rich" nodes="{{html}}"></rich-text>
+</view>
+

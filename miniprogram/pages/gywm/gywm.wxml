@@ -1,2 +1,8 @@
 <!--pages/gywm/gywm.wxml-->
-<text>pages/gywm/gywm.wxml</text>
+<view class="banner">
+    <image src="../../images/5d044a1b5b7e4.jpg"></image>
+</view> 
+<view class="dd">
+  <rich-text class="rich"nodes="{{msgList[0].nr}}" ></rich-text>
+</view>
+

@@ -1,2 +1,72 @@
 <!--pages/hdbm/hdbm.wxml-->
-<text>pages/hdbm/hdbm.wxml</text>
+<view class="page__bd">
+  <view wx:for="{{rmb}}">
+    <view class="weui-form-preview" wx:if="{{item._yyzt!=1}}">
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">活动标题</view>
+          <view class="weui-form-preview__value_in-hd">{{item.title}}</view>
+        </view>
+      </view>
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">地点</view>
+          <view class="weui-form-preview__value">{{item.place}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">时间</view>
+          <view class="weui-form-preview__value">{{item.time}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">举办单位</view>
+          <view class="weui-form-preview__value">{{item.fqdw}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">报名人数</view>
+          <view class="weui-form-preview__value">{{item.rs}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">简介</view>
+          <view class="weui-form-preview__value">{{item.jj}}</view>
+        </view>
+      </view>
+      <view class="weui-form-preview__ft">
+        <view id="{{item._id}}" bindtap="hdyy" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">一键报名</view>
+      </view>
+    </view>
+    <view class="weui-form-preview"  wx:if="{{item._yyzt==1}}">
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">活动标题</view>
+          <view class="weui-form-preview__value_in-hd">{{item.title}}</view>
+        </view>
+      </view>
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">地点</view>
+          <view class="weui-form-preview__value">{{item.place}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">时间</view>
+          <view class="weui-form-preview__value">{{item.time}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">举办单位</view>
+          <view class="weui-form-preview__value">{{item.fqdw}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">报名人数</view>
+          <view class="weui-form-preview__value">{{item.rs}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">简介</view>
+          <view class="weui-form-preview__value">{{item.jj}}</view>
+        </view>
+      </view>
+      <view class="weui-form-preview__ft">
+        <view bindtap="qxyy" id="{{item._id}}" class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">取消预约</view>
+        <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">更多操作</navigator>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,11 @@
 <!--pages/getuser/getuser.wxml-->
-<text>pages/getuser/getuser.wxml</text>
+<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</button>
+<form catchsubmit="formSubmit">
+  <view class="row">
+  <view class="text1">名称：</view> 
+  <input type="nickname" class="weui-input" name="input"  placeholder="请输入昵称"/>
+</view>
+<button type="primary" style="margin-top:40rpx;margin-bottom:20rpx" formType="submit">提交</button>
+</form>

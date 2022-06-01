@@ -1,2 +1,122 @@
+<!-- <view class="my_top">
+  <image src="../../images/1035211.jpg"></image>
+</view>
+<view class="my_logo">
+<view class="my_logo_pho">
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+</view>
+<view class="my_logo_text">
+<open-data type="userNickName"  lang="zh_CN" class="user-name"></open-data>
+</view>
+</view> -->
+
+<!-- 黄色 -->
+<!-- <view class="nav_my"> -->
+<!-- 红色 -->
+<!-- <view class="nav_bar"> -->
+<!-- 图片按钮 -->
+<!-- <view class="nav_bar_logo">
+<image src="../../images/wodemaidan.png"></image>
+</view>
+<view class="nar_bar_text">我的预约</view>
+</view> -->
+<!-- 红色 -->
+<!-- <view class="nav_bar"> -->
+<!-- 图片按钮 -->
+<!-- <view class="nav_bar_logo">
+<image src="../../images/zhanghaoguanli.png"></image>
+</view>
+<view class="nar_bar_text">个人资料</view>
+</view> -->
+<!-- 红色 -->
+<!-- <view class="nav_bar"> -->
+<!-- 图片按钮 -->
+<!-- <view class="nav_bar_logo">
+<image src="../../images/kefuguanli.png"></image>
+</view>
+<view class="nar_bar_text">服务中心</view>
+</view>
+
+</view> -->
+
+
+
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my_top">
+  <image src="../../images/1035211.jpg"></image>
+</view>
+<view class="my_logo" wx:if="{{openid!=''}}">
+  <view class="my_logo_pho">
+  <!-- 绑定值，因为openid不可以重复，所以userInfo[]中的值为零 -->
+    <image  class="userinfo-avatar" src="{{userInfo[0].userphoto}}" mode="cover"></image>
+  </view>
+  <view class="my_logo_text">
+    <text class="user-name">{{userInfo[0].name}}</text>
+  </view>
+</view>
+<view class="my_logo" wx:if="{{openid=='' || userInfo==''}}">
+  <view class="top_title">您还未授权登录</view>
+  <button bindtap="getopenid" type="default">登录</button>
+</view>
+<view class="nav_my">
+  <view class="nav_bar" bindtap="wdyy">
+      <view class="nav_bar_logo">
+        <image src="../../images/wodemaidan.png"></image>
+      </view>
+      <view class="nar_bar_text">我的预约</view>
+  </view>
+  <view class="nav_bar" bindtap="grzl">
+      <view class="nav_bar_logo">
+        <image src="../../images/zhanghaoguanli.png"></image>
+      </view>
+      <view class="nar_bar_text">个人资料</view>
+  </view>
+  <view class="nav_bar" bindtap="fwzx">
+      <view class="nav_bar_logo">
+        <image src="../../images/kefuguanli.png"></image>
+      </view>
+      <view class="nar_bar_text">服务中心</view>
+  </view>
+</view>
+<view class="banner-xx">
+    <view class="ban-t"  bindtap='showgbzzx'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="../../images/zhinan.png"></image>
+            </view>
+            <view class="ban-tx">
+                帮助中心
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='showgyqfk'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="../../images/tuandui.png"></image>
+            </view>
+            <view class="ban-tx">
+                意见反馈
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='showgywm'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="../../images/qiyeguanli.png"></image>
+            </view>
+            <view class="ban-tx">
+                关于我们 & 版本管理
+            </view>
+        </view>
+    </view>
+    <view class="ban-t" bindtap='showgl'>
+        <view class="ban-row">
+            <view class="ban-im">
+                <image src="../../images/chakandingdan.png"></image>
+            </view>
+            <view class="ban-tx">
+                管理后台
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,2 +1,13 @@
 <!--pages/qxyy/qxyy.wxml-->
-<text>pages/qxyy/qxyy.wxml</text>
+<mp-form-page title="取消选座" subtitle="请根据下方原因选择提交,在规定时间内取消选座将暂时不扣除信用值。">
+        <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+            <mp-cells title="选择取消原因">
+                <mp-checkbox-group prop="radio" multi="{{false}}" bindchange="radioChange">
+                    <mp-checkbox wx:for="{{radioItems}}" wx:key="value" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+                </mp-checkbox-group>
+            </mp-cells>
+        </mp-form>
+        <view slot="button">
+            <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+        </view>
+    </mp-form-page>

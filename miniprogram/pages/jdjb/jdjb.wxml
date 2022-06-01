@@ -1,2 +1,19 @@
 <!--pages/jdjb/jdjb.wxml-->
-<text>pages/jdjb/jdjb.wxml</text>
+<view class="banner">
+  <image src="../../images/5c9647d0c66d1.jpg"></image>
+</view>
+<button type="primary" style="margin-top: 50rpx;" bindtap="jdjb">发起举报</button>
+<view class="weui-panel wdjb">
+  <view class="weui-panel__hd">我的举报</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text" wx:for="{{rmb}}">
+      <view class="weui-media-box__title weui-media-box__title_in-text">对{{item.zwlist[0].bh}}的举报</view>
+      <view class="weui-media-box__desc">{{item.yy}}</view>
+      <view class="weui-media-box__desc" wx:if="{{item.cljg!=''}}">{{item.cljg}}</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">时间:{{item._createTime}}</view>
+        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra" wx:if="{{item.cljg!=''}}">已处理</view>
+      </view>
+    </view>
+  </view>
+</view>

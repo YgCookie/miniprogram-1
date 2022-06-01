@@ -1,2 +1,19 @@
 <!--pages/dkjl/dkjl.wxml-->
-<text>pages/dkjl/dkjl.wxml</text>
+<view class="ksj" wx:if="{{xzzz==''}}">
+<!-- 如果预约数据为空，显示缺省页面 -->
+  <!-- <image class="backI" src="../../images/5d21f5a20be59.jpg"></image>-->
+  <view class="container">
+  <text class="backT">你还没有打卡记录</text>
+</view>
+</view>
+<!-- wx:if="{{xzzz!=''}}"使用 wx:if="" 来判断是否需要渲染该代码块 -->
+<view class="jqdk" wx:for="{{xzxx}}" wx:if="{{xzzz!=''}}">
+  <view class="jqdk_title">打卡记录</view>
+  <view class="jqdk_main">
+    <view class="jqdk_main_text1">座位: {{item.zwList[0].bh}}</view>
+    <view class="jqdk_main_text2" wx:if="{{item.qdzt!=0}}">打卡时间:  {{item.qdsj}}</view>
+    <view class="jqdk_main_text2" wx:if="{{item.qdzt==0}}">打卡时间:  暂未签到</view>
+    <view class="jqdk_main_text2" wx:if="{{item.qt!=0}}">签退时间:  {{item.qtsj}}</view>
+    <view class="jqdk_main_text2" wx:if="{{item.qt==0}}">签退时间:  暂未签到</view>
+  </view>
+</view>

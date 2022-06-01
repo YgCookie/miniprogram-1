@@ -1,2 +1,48 @@
 <!--pages/wdyy/wdyy.wxml-->
-<text>pages/wdyy/wdyy.wxml</text>
+<view class="banner">
+  <image src="../../images/5d044a1b5b7e4.jpg"></image>
+</view>
+<view class="yyxx_box">
+  <view class="weui-form-preview" style="margin: 20rpx 0;" wx:for="{{xzxx}}">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__label">座位</view>
+      <view class="weui-form-preview__value_in-hd">{{item.zwList[0].bh}}</view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">预约时间</view>
+        <view class="weui-form-preview__value">{{item._createTime}}</view>
+      </view>
+      <view class="weui-form-preview__item" wx:if="{{item.qdzt==1}}">
+        <view class="weui-form-preview__label">签到时间</view>
+        <view class="weui-form-preview__value">{{item.qdsj}}</view>
+      </view>
+      <view class="weui-form-preview__item" wx:if="{{item.qdzt==0}}">
+        <view class="weui-form-preview__label">签到时间</view>
+        <view class="weui-form-preview__value">暂未签到</view>
+      </view>
+      <view class="weui-form-preview__item" wx:if="{{item.qtsj==1}}">
+        <view class="weui-form-preview__label">签退时间</view>
+        <view class="weui-form-preview__value">{{item.qtsj}}</view>
+      </view>
+      <view class="weui-form-preview__item" wx:if="{{item.qt==0}}">
+        <view class="weui-form-preview__label">签退时间</view>
+        <view class="weui-form-preview__value">暂未签退</view>
+      </view>
+      <view class="weui-form-preview__item" wx:if="{{item.qx==1}}">
+        <view class="weui-form-preview__label">取消状态</view>
+        <view class="weui-form-preview__value">该订单已取消</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">编号</view>
+        <view class="weui-form-preview__value">{{item._id}}</view>
+      </view>
+    
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">辅助操作</navigator>
+      <view class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap="qxzw" id="{{item._id}}">取消</view>
+    </view>
+  </view>
+  
+</view>

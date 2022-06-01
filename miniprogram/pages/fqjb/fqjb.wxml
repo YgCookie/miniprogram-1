@@ -1,2 +1,39 @@
 <!--pages/fqjb/fqjb.wxml-->
-<text>pages/fqjb/fqjb.wxml</text>
+<mp-form-page title="监督举报" subtitle="请如实填写表单，提交之后核实之后第一时间反馈！">
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells title="举报类型">
+      <mp-checkbox-group prop="radio" multi="{{false}}" bindchange="radioChange">
+        <mp-checkbox wx:for="{{radioItems}}" wx:key="value" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+      </mp-checkbox-group>
+    </mp-cells>
+    <mp-cells title="举报原因">
+      <mp-cell has-header="{{false}}" has-footer="{{false}}" title="" ext-class="">
+        <textarea class="weui-textarea" bindinput="formip" placeholder="请输入举报原因" style="height: 3.3em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </mp-cell>
+      <mp-cell>
+                <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="4" title="附件上传" tips="最多可上传4张照片"></mp-uploader>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="选择举报时间">
+      <label>
+        <mp-cell has-header="{{false}}" ext-class="weui-cell_select">
+          <picker bindchange="bindsjxx" value="{{sjxxIndex}}" range="{{sjxx}}">
+            <view class="weui-select">{{sjxx[sjxxIndex][0]}}</view>
+          </picker>
+        </mp-cell>
+      </label>
+      <label>
+        <mp-cell ext-class="weui-cell_select weui-cell_select-after">
+          <view slot="title" class="weui-label">举报座位</view>
+          <picker bindchange="bindxzzw" value="{{items[jbzw].value}}" range-key="{{'name'}}" range="{{items}}">
+            <view class="weui-select">{{items[jbzw].name}}</view>
+          </picker>
+        </mp-cell>
+      </label>
+    </mp-cells>
+  </mp-form>
+  <view slot="button">
+    <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+  </view>
+</mp-form-page>

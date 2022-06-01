@@ -1,1 +1,27 @@
 /* pages/getuser/getuser.wxss */
+.avatar-wrapper{
+  width: 300rpx;
+  height: 300rpx;
+}
+.avatar{
+  width: 100%;
+  height: 100%;
+}
+.row{
+  width: 100%;
+  border: 1rpx solid rgb(241, 241, 235);
+}
+.text1{
+  margin: 20rpx auto;
+  float: left;
+  height: 50rpx;
+  color: rgb(117, 114, 114);
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.weui-input{
+  width: 400rpx;
+  margin: 20rpx auto;
+  float: left;
+  height: 50rpx;
+}

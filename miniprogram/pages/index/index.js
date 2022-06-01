@@ -36,9 +36,7 @@ Page({
     })
     db.collection("banner").get({
       success:res=>{
-        console.log(res)
         this.setData({
-          
           mglist:res.data
         }) 
       }

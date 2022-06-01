@@ -27,7 +27,8 @@
     "pages/fwzx/fwzx",
     "pages/gywm/gywm",
     "pages/jbgl/jbgl",
-    "pages/jgglxq/jgglxq"
+    "pages/jgglxq/jgglxq",
+    "pages/notic/notic"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -1,2 +1,56 @@
-<!--pages/zwyy/zwyy.wxml-->
-<text>pages/zwyy/zwyy.wxml</text>
+<view class="banner">
+  <image src="../../images/5d044a1b5b7e4.jpg"></image>
+</view>
+<view class="nav_xc">
+  <view class="nav_main" style="width: 600rpx;">
+    <view class="nav_mian_title">时间选择：</view>
+    <picker bindchange="bindPickerChangesjxx" value="{{sjxx}}" range="{{sjxx}}">
+      <view class="picker" style="width: 400rpx;">
+        {{sjxx[sjxxindex][0]}}
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="nav">
+  <view class="nav_main">
+    <view class="nav_mian_title">位置：</view>
+    <picker bindchange="bindPickerChangeplace" value="{{index}}" range="{{placearr}}">
+      <view class="picker">
+        {{placearr[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="nav_main" style="float: right;">
+    <view class="nav_mian_title">状态：</view>
+    <picker bindchange="bindPickerChangezt" value="{{ztarr}}" range="{{ztarr}}">
+      <view class="picker">
+        {{ztarr[yyzt][0]}}
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="zw">
+  <view class="box_main" wx:for="{{tswz}}" wx:for-item="item1" wx:key="_id" wx:if="{{item1.xs==1}}">
+    <view class="wz_lc">{{item1.tsglc}}</view>
+    <view wx:for="{{rmb}}" wx:for-item="item" wx:key="_id" bindtap="showxq" id="{{item._id}}" class="zw_bar_main" wx:if="{{item.lc==item1._id&&item.zt==0}}">
+      <view class="zw_bar" wx:if="{{item.zwzt==0}}">
+        <view class="zw_bar_bh">编号</view>
+        <view class="zw_bar_bh_sz">{{item.bh}}</view>
+        <view class="zw_zt">可预约</view>
+      </view>
+      <view class="zw_bar zw_bar1" wx:if="{{item.zwzt==1}}">
+        <view class="zw_bar_bh">编号</view>
+        <view class="zw_bar_bh_sz">{{item.bh}}</view>
+        <view class="zw_zt">不可预约</view>
+      </view>
+      <view class="zw_bar zw_bar2" wx:if="{{item.zwzt==2}}">
+        <view class="zw_bar_bh">编号</view>
+        <view class="zw_bar_bh_sz">{{item.bh}}</view>
+        <view class="zw_zt">已预约</view>
+      </view>
+    </view>
+    <view style="clear: both;"></view>
+  </view>
+
+
+</view>

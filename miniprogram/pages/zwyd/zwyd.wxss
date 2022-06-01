@@ -1,1 +1,133 @@
 /* pages/zwyd/zwyd.wxss */
+.title{
+  width: 90%;
+  height: 100rpx;
+  font-weight: 700;
+  font-size: 45rpx;
+  line-height: 100rpx;
+  margin:30rpx auto;
+  letter-spacing:8px;
+  color: white;
+}
+.xzxx{
+  width: 90%;
+  margin:20rpx auto;
+  height: 200rpx;
+}
+.xzxx_box{
+  width: 47%;
+  height: 100%;
+  background-color: rgba(235, 235, 235, 0.219);
+  border-radius: 20rpx;
+  float: left;
+}
+.xzxx_box1{
+  width: 47%;
+  height: 100%;
+  background-color: rgba(235, 235, 235, 0.219);
+  border-radius: 20rpx;
+  float: right;
+}
+.xzzz_box_title{
+  width: 90%;
+  height: 70rpx;
+  margin: 20rpx auto;
+}
+.xzzz_box_title_icon{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+}
+.xzzz_box_title_icon image{
+  width: 100%;
+  height: 100%;
+}
+.xzzz_box_title_text{
+  float: left;
+  width: 170rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  letter-spacing:3px;
+  padding-left: 10rpx;
+  font-weight: 600;
+  font-size: 35rpx;
+  color: white;
+}
+.xzxx_mian{
+  width: 90%;
+  margin: 10rpx auto;
+  height: 70rpx;
+}
+.xzzz_mian_text{
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  letter-spacing:3px;
+  font-weight: 600;
+  font-size: 29rpx;
+  float: left;
+  color: white;
+}
+.xzzz_mian_icon{
+  width: 20%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-weight: 600;
+  font-size: 29rpx;
+  float: left;
+  color: white;
+}
+.back{
+  width: 100%;
+  height: 100vh;
+}
+.back image{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  margin-top: -100vh;
+}
+.zwxx{
+  width: 90%;
+  margin: 50rpx auto;
+  height: 200rpx;
+  background-color: rgba(235, 235, 235, 0.219);
+  border-radius: 20rpx;
+}
+.zwxx_box_title{
+  width: 90%;
+  height: 70rpx;
+  padding-top: 20rpx;
+  margin-left: 20rpx;
+}
+.zwxx_wz{
+  width: 90%;
+  height: 80rpx;
+  line-height: 70rpx;
+  margin: 10rpx auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35rpx;
+  color: white;
+  letter-spacing:2rpx;
+}
+.lq{
+  width: 250rpx;
+  height: 100rpx;
+  margin: 50rpx auto;
+  background-color: rgba(216, 235, 53, 0.637);
+  border-radius: 20rpx;
+  line-height: 100rpx;
+  text-align: center;
+  letter-spacing:3px;
+  color: white;
+  font-weight: 800;
+}
+.yhxx{
+  width: 90%;
+  margin: 50rpx auto;
+  height: 270rpx;
+  background-color: rgba(235, 235, 235, 0.219);
+  border-radius: 20rpx;
+}

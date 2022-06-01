@@ -1,2 +1,30 @@
 <!--pages/tscx/tscx.wxml-->
-<text>pages/tscx/tscx.wxml</text>
+<view class="banner">
+  <image src="../../images/5cff6f9da2f6c.png"></image>
+</view>
+<view class="search">
+  <input class="weui-input" auto-focus placeholder="搜索" value="{{value}}" bindinput="seachtype" bindtap="yhdj" style="width: {{qxshow==1?'80%':'90%'}};" confirm-type="search"/>
+  <view class="ipputqx" bindtap="qx" wx:if="{{qxshow==1}}" >取消</view>
+</view>
+<view class="tslb" wx:if="{{rmb!=''}}">
+  <view class="tslb_main" wx:for="{{rmb}}" bindtap="tsxq" id="{{item._id}}">
+    <view class="tslb_left">
+      <image src="{{item.fm}}"></image>
+    </view>
+    <view class="tslb_right">
+      <view class="tslb_right_title">{{item.name}}</view>
+      <view class="tslb_right_zz">作者：{{item.zz}}</view>
+      <view class="tslb_right_zz">出版社：{{item.cbs}}</view>
+      <view class="tslb_right_zz">位置：{{item.wz}}</view>
+      <view class="tslb_right_an">
+        <view class="tslb_right_an_main btn1">{{item.btn1}}</view>
+        <view class="tslb_right_an_main btn2">{{item.btn2}}</view>
+        <view class="tslb_right_an_main">{{item.btn3}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="qxkz" wx:if="{{rmb==''}}">
+  <image src="../../images/ssjg.png"></image>
+  <view class="qxkz_text">查询暂无结果</view>
+</view>

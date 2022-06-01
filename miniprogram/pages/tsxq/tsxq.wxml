@@ -1,2 +1,27 @@
 <!--pages/tsxq/tsxq.wxml-->
-<text>pages/tsxq/tsxq.wxml</text>
+<view class="top">
+  <view class="tslb_main">
+    <view class="tslb_left">
+      <image src="{{rmb.fm}}"></image>
+    </view>
+    <view class="tslb_right">
+      <view class="tslb_right_title">{{rmb.name}}</view>
+      <view class="tslb_right_zz">作者：{{rmb.zz}}</view>
+      <view class="tslb_right_zz">出版社：{{rmb.cbs}}</view>
+      <view class="tslb_right_zz">位置：{{rmb.wz}}</view>
+      <view class="tslb_right_an">
+        <view class="tslb_right_an_main btn1">{{rmb.btn1}}</view>
+        <view class="tslb_right_an_main btn2">{{rmb.btn2}}</view>
+        <view class="tslb_right_an_main">{{rmb.btn3}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="tsjj">
+  <view class="tsjj_title">内容描述</view>
+  <view class="tsjj_main">{{rmb.nrgk}}</view>
+</view>
+<view class="tsgwz">
+  <view class="tsgwz_title">图书馆位置</view>
+  <view class="tsgwz_main">{{rmb.wz}}</view>
+</view>

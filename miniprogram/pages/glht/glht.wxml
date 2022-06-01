@@ -1,2 +1,5 @@
 <!--pages/glht/glht.wxml-->
-<text>pages/glht/glht.wxml</text>
+<view class="banner">
+  <image src="../../images/5d5bb90e8d412.jpg"></image>
+</view>
+<button type="primary" bindtap="jhht" style="margin-top: 50rpx;">举报管理</button>

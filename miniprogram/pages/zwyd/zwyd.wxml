@@ -1,2 +1,61 @@
 <!--pages/zwyd/zwyd.wxml-->
-<text>pages/zwyd/zwyd.wxml</text>
+<view class="back">
+  <image src="../../images/5d21f5a20be59.jpg"></image>
+</view>
+<view class="main">
+  <view class="title">选座</view>
+  <view class="xzxx">
+    <view class="xzxx_box">
+      <view class="xzzz_box_title">
+        <view class="xzzz_box_title_icon">
+          <image src="../../images/calendar.png"></image>
+        </view>
+        <view class="xzzz_box_title_text">
+          选择日期
+        </view>
+      </view>
+      <view class="xzxx_mian">
+        <view class="xzzz_mian_text">2021.02.10</view>
+        <view class="xzzz_mian_icon">∨</view>
+      </view>
+    </view>
+    <view class="xzxx_box1">
+      <view class="xzzz_box_title">
+        <view class="xzzz_box_title_icon">
+          <image src="../../images/online-tracking.png"></image>
+        </view>
+        <view class="xzzz_box_title_text">
+          选择时间
+        </view>
+      </view>
+      <view class="xzxx_mian">
+        <view class="xzzz_mian_text">{{sjxx[sjxxindex][0]}}</view>
+        <view class="xzzz_mian_icon">∨</view>
+      </view>
+    </view>
+  </view>
+  <view class="zwxx">
+    <view class="zwxx_box_title">
+      <view class="xzzz_box_title_icon">
+        <image src="../../images/map.png"></image>
+      </view>
+      <view class="xzzz_box_title_text">
+        座位信息
+      </view>
+    </view>
+    <view class="zwxx_wz">{{rmbs[0].zwlist[0].tsglc}}座位编号{{rmbs[0].bh}}</view>
+  </view>
+  <view class="yhxx">
+    <view class="zwxx_box_title">
+      <view class="xzzz_box_title_icon">
+        <image src="../../images/yh.png"></image>
+      </view>
+      <view class="xzzz_box_title_text">
+        用户信息
+      </view>
+    </view>
+    <view class="zwxx_wz">姓名：{{userinfo[0].name}}</view>
+    <view class="zwxx_wz">信息：{{userinfo[0].xy}}{{userinfo[0].nj}}</view>
+  </view>
+  <view class="lq" bindtap="qrxz">确认选座</view>
+</view>

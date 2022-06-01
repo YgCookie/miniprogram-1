@@ -1,2 +1,27 @@
 <!--pages/grzl/grzl.wxml-->
-<text>pages/grzl/grzl.wxml</text>
+<view class="banner">
+  <image src="../../images/5d044a1b5b7e4.jpg"></image>
+</view> 
+<view class="fqzd-ban">
+    <view class="row">
+        <view class="text1">姓名：</view>
+        <view class="text2">{{userInfo[0].username}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">电话：</view>
+        <view class="text2">{{userInfo[0].phone}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">学院：</view>
+        <view class="text2">{{userInfo[0].xy}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">学号：</view>
+        <view class="text2">{{userInfo[0].studentid}}</view>
+    </view> 
+    <view class="row">
+        <view class="text1">年级：</view>
+        <view class="text2">{{userInfo[0].nj}}</view>
+    </view> 
+    <button type="default" style="margin-top:20rpx;margin-bottom:60rpx" bindtap='showgrxg'>修改</button>
+</view>

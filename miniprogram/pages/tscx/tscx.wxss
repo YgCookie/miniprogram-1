@@ -1,1 +1,115 @@
 /* pages/tscx/tscx.wxss */
+.banner{
+  width: 100%;
+  height: 250rpx;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+.tslb{
+  width: 95%;
+  min-height: 500rpx;
+  margin: 0 auto;
+}
+.tslb_main{
+  width: 100%;
+  height: 250rpx;
+  margin: 20rpx auto;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid rgb(184, 181, 181);
+}
+.tslb_left{
+  width:25%;
+  height: 100%;
+  float: left;
+}
+.tslb_left image{
+  width: 100%;
+  height: 100%;
+}
+.tslb_right{
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+.tslb_right_title{
+  margin-left: 40rpx;
+  width: 85%;
+  max-height: 70rpx;
+  min-height: 40rpx;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  line-height: 35rpx;
+  font-weight: 700;
+}
+.tslb_right_zz{
+  margin-left: 40rpx;
+  width: 85%;
+  height: 30rpx;
+  font-size: 22rpx;
+  margin-top: 5rpx;
+  line-height: 30rpx;
+}
+.tslb_right_an{
+  margin-left: 40rpx;
+  width: 85%;
+  height: 40rpx;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+  line-height: 30rpx;
+}
+.tslb_right_an_main{
+  width: 120rpx;
+  height: 40rpx;
+  border-radius: 15rpx;
+  background-color: rgb(86, 150, 95);
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+  float: left;
+  color: white;
+  margin-right: 20rpx;
+}
+.btn1{
+  background-color: rgb(105, 189, 189);
+}
+.btn2{
+  background-color: rgb(168, 91, 121);
+}
+.search{
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(238, 236, 236);
+}
+.weui-input{
+  height: 60rpx;
+  width: 80%;
+  background-color: white;
+  margin: 10rpx 20rpx;
+  border-radius: 10rpx;
+  padding-left: 20rpx;
+  float: left;
+}
+.ipputqx{
+  float: left;
+  height: 60rpx;
+  margin: 10rpx 2rpx;
+  line-height: 60rpx;
+  color: rgb(91, 85, 97);
+}
+.qxkz{
+  width: 450rpx;
+  height: 500rpx;
+  margin: 100rpx auto;
+}
+.qxkz image{
+  width: 100%;
+  height: 450rpx;
+}
+.qxkz_text{
+  text-align: center;
+  line-height: 50rpx;
+  color: rgb(203, 205, 207);
+  margin-top: -80rpx;
+}

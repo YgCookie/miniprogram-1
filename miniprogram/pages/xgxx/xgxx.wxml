@@ -1,2 +1,35 @@
 <!--pages/xgxx/xgxx.wxml-->
-<text>pages/xgxx/xgxx.wxml</text>
+<!--pages/grzl/grzl.wxml-->
+<view class="banner">
+  <image src="../../images/5d044a1b5b7e4.jpg"></image>
+</view>
+<form catchsubmit="formSubmit">
+  <view class="fqzd-ban">
+    <view class="row">
+        <view class="text1">姓名：</view>
+        <input class="weui-input" name="name" value="{{userInfo[0].username}}"/>
+    </view>
+    <view class="row">
+        <view class="text1">电话：</view>
+        <input class="weui-input" name="phone" type="number" value="{{userInfo[0].phone}}"/>
+    </view>
+    <view class="row">
+        <view class="text1">学院：</view>
+        <picker bindchange="bindchangexy" value="{{xy_index}}" range="{{array1}}">
+          <view class="picker">{{array1[xy_index]}}</view>
+        </picker>
+    </view>
+    <view class="row">
+        <view class="text1">学号：</view>
+        <input class="weui-input" name="xh" type="number" value="{{userInfo[0].studentid}}"/>
+    </view> 
+    <view class="row">
+        <view class="text1">年级：</view>
+        <picker bindchange="bindchangenj" value="{{nj_index}}" range="{{array}}">
+          <view class="picker">{{array[nj_index]}}</view>
+        </picker>
+    </view> 
+    <button type="default" style="margin-top:20rpx;margin-bottom:60rpx" form-type="submit">修改</button>
+    <button type="default" bindtap="_handRetset" style="margin-top:20rpx;margin-bottom:60rpx" form-type="reset">重置</button>
+</view>
+</form>

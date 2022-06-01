@@ -1,2 +1,29 @@
 <!--pages/sm/sm.wxml-->
-<text>pages/sm/sm.wxml</text>
+<view class="bj">
+  <image src="../../images/5d03ae5765a9c.jpg"></image>
+</view>
+<view class="main">
+<view class="mian_box">
+  <view class="bar">
+    <view class="barcode">{{code_openid}}</view>
+    <canvas canvas-id="barcode"></canvas>
+  </view>
+  <view class="qrcode">
+    <canvas canvas-id="qrcode"></canvas>
+  </view>
+  <view class="tx">用户认证二维码，请不要提供给他人！</view>
+</view>
+<view class="userinfo">
+  <view class="userlogo">
+    <image src="{{userinfo[0].userphoto}}"></image>
+  </view>
+  <view class="user-text">{{userinfo[0].username}}</view>
+  <view class="rztb">已实名认证</view>
+</view>
+<view class="qr" bindtap="openqr">
+  <view class="qr_zr">
+    <image src="../../images/qr.png"></image>
+  </view>
+  <view class="qr_zrtext">扫一扫</view>
+</view>
+</view>

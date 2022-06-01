@@ -1,1 +1,147 @@
 /* pages/dk/dk.wxss */
+.dk_top{
+  width: 100%;
+  height: 350rpx;
+}
+.dk_top image{
+  width: 100%;
+  height: 100%;
+}
+.dk_top_bar{
+  width: 100%;
+  height: 350rpx;
+  margin-top: -350rpx;
+}
+.user_logo{
+  width: 90%;
+  height: 150rpx;
+  margin: 50rpx auto;
+}
+.user_logo_image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.user_logo_image image{
+  width: 100%;
+  height: 100%;
+}
+.user_text{
+  float: left;
+  height: 120rpx;
+  margin: 15rpx 20rpx;
+  width: 350rpx;
+}
+.user_text1{
+  font-size: 28rpx;
+  line-height: 70rpx;
+  letter-spacing: 3rpx;
+  color: white;
+  font-weight: 600;
+}
+.user_ljqd{
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  color: white;
+}
+.dkjm{
+  width: 90%;
+  height: 400rpx;
+  background-color: rgb(243, 240, 243);
+  margin: 0 auto;
+  margin-top: -110rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+.dk_row1{
+  width: 80%;
+  height: 200rpx;
+  margin: 20rpx auto;
+}
+.dk_row_zpmain{
+  margin: 0 50rpx;
+  float: left;
+  height: 200rpx;
+  width: 160rpx;
+}
+.dk_row_zp{
+  width: 160rpx;
+  height: 160rpx;
+}
+.dk_row_zp_text{
+  width: 100%;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 25rpx;
+  letter-spacing: 2rpx;
+}
+.dk_row_zp image{
+  width: 100%;
+  height: 100%;
+}
+.dk_row_zp2{
+  float: right;
+}
+.dk_row2{
+  width: 90%;
+  height: 130rpx;
+  margin: 20rpx auto;
+  color: rgb(121, 120, 120);
+}
+.dk_row2_bar{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.dk_row2_bar_sz{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 38rpx;
+  text-align: center;
+}
+.dk_row2_bar_mz{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  letter-spacing: 10rpx;
+}
+.jqdk{
+  width: 90%;
+  height:350rpx;  
+  background-image: linear-gradient(to right, rgba(7, 53, 180, 0.103) , rgba(229, 226, 226, 0.253));
+  margin:90rpx auto;
+  border-radius: 10rpx;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+.jqdk_title{
+  line-height: 80rpx;
+  margin-left: 50rpx;
+  letter-spacing: 4rpx;
+  color: rgb(5, 67, 124);
+  font-weight: 600;
+}
+.jqdk_main{
+  width: 98%;
+  height: 200rpx;
+  border-left: 10rpx solid rgb(46, 81, 146);
+}
+.jqdk_main_text1{
+  margin-left: 30rpx;
+  line-height: 90rpx;
+  font-weight: 700;
+  font-size: 35rpx;
+  letter-spacing: 3rpx;
+}
+.jqdk_main_text2{
+  margin-left: 30rpx;
+  line-height: 60rpx;
+  color: rgb(118, 119, 121);
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+}

@@ -1,2 +1,24 @@
 <!--pages/wpxx/wpxx.wxml-->
-<text>pages/wpxx/wpxx.wxml</text>
+<view class="weui-panel">
+  <view class="weui-panel__hd">详情信息</view>
+  <view class="zp">
+    <image src="{{rmb.zp[0]}}"></image>
+  </view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text" style="font-weight: 700;line-height: 120rpx;">{{rmb.title}}</view>
+      <view class="weui-media-box__desc">{{rmb.wzxx}}</view>
+      <view class="weui-media-box__title weui-media-box__title_in-text wz">联系电话:{{rmb.dh}}</view>
+      <view class="weui-media-box__title weui-media-box__title_in-text wz">地点:{{rmb.wz}}</view>
+      <view class="weui-media-box__title weui-media-box__title_in-text wz">日期:{{rmb.data}}</view>
+      <view class="weui-media-box__title weui-media-box__title_in-text wz">时间:{{rmb.time}}</view>
+      <view class="weui-media-box__title weui-media-box__title_in-text wz" wx:if="{{rmb.wzzt==1}}">已完结</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">发布时间:{{rmb._createTime}}</view>
+        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{rmb.xxzt}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<button type="primary" style="margin-top: 30rpx;" bindtap="wj" wx:if="{{openid==rmb.openid}}">已完结</button>
+<button type="warn" style="margin-top: 30rpx;" bindtap="qc" wx:if="{{openid==rmb.openid}}">清除</button>

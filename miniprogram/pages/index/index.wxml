@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <view class="banner">
-  <swiper class="swip_main" indicator-dots autoplay interval="60000" circular>
+  <swiper class="swip_main" indicator-dots autoplay interval="6000" circular>
     <block wx:for="{{mglist}}">
       <swiper-item>
-        <image style="width: 100%;height: 100%;" mode="aspectFill" src="{{item.photo}}" bindtap="tzym"></image>
+        <image style="width: 100%;height: 100%;" mode="aspectFill" src="{{item.photo}}"bindtap="tzym" ></image>
       </swiper-item>
     </block>
   </swiper>
@@ -18,7 +18,7 @@
   <view class="news_right">
     <swiper class="swiper-news-top" vertical="true" autoplay="true" circular="true" interval="3000">
       <block wx:for="{{msgList}}" >
-            <navigator url="" open-type="navigate">
+            <navigator url="../notic/notic" open-type="navigate">
                 <swiper-item>
                     <view class="swiper_item" >· {{item.text}}</view>
                 </swiper-item>
