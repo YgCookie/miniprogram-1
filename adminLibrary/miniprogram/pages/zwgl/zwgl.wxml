@@ -1,0 +1,14 @@
+<!--pages/jbgl/jbgl.wxml-->
+<view class="weui-panel">
+  <view class="weui-panel__hd">举报管理中心</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text" wx:for="{{rmb}}" id="{{item._id}}" bindtap="jbxq">
+      <view class="weui-media-box__title weui-media-box__title_in-text">{{item.zwlist[0].bh}}</view>
+      <view class="weui-media-box__desc">{{item.yy}}</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">{{item._createTime}}</view>
+        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra" wx:if="{{item.cljg!=''}}">已完结</view>
+      </view>
+    </view>
+  </view>
+</view>

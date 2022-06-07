@@ -1,0 +1,84 @@
+.doc-box {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 0 30rpx 30rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+  color: #666;
+}
+
+.title {
+  padding-top: 30rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.prpos,
+.explain,
+.type,
+.default,
+.event,
+.callback {
+  padding-left: 140rpx;
+  position: relative;
+}
+
+.prpos::before,
+.explain::before,
+.type::before,
+.default::before,
+.event::before,
+.callback::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.prpos {
+  margin-top: 20rpx;
+}
+
+.prpos::before {
+  content: '参数：';
+}
+
+.explain {
+  margin-top: 8rpx;
+}
+
+.explain::before {
+  content: '说明：';
+}
+
+.type {
+  margin-top: 8rpx;
+}
+
+.type::before {
+  content: '类型：';
+}
+
+.default {
+  margin-top: 8rpx;
+}
+
+.default::before {
+  content: '默认值：';
+}
+
+.event {
+  margin-top: 20rpx;
+}
+
+.event::before {
+  content: '事件：';
+}
+
+.callback {
+  margin-top: 8rpx;
+}
+
+.callback::before {
+  content: '回调参数：';
+}
