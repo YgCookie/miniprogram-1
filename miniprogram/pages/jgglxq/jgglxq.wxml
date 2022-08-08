@@ -1,0 +1,35 @@
+<!--pages/jgglxq/jgglxq.wxml-->
+<view class="fqzd-ban">
+    <view class="row">
+        <view class="text1">座位：</view>
+        <view class="text2">{{rmb[0].zwlist[0].bh}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">时间：</view>
+        <view class="text2">{{rmb[0]._createTime}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">时间段：</view>
+        <view class="text2">{{rmb[0].sjdz}}</view>
+    </view>
+    <view class="row">
+        <view class="text1">类型：</view>
+        <view class="text2">{{rmb[0].jblx}}</view>
+    </view>
+    <view class="row1">
+        <view class="text_fj">附件:</view>
+        <view class="zpfj" wx:for="{{rmb[0].zp}}">
+          <image src="{{item}}" mode="aspectFit"></image>
+        </view>
+    </view>
+    <view class="row1">
+        <view class="text_fj">原因:</view>
+        <view class="text_yy">{{rmb[0].yy}}</view>
+    </view>
+    <view class="row1">
+        <view class="text_fj">处理结果:</view>
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="处理结果" />
+    </view>
+    <button type="default" style="margin-top:20rpx;margin-bottom:60rpx" bindtap='showgrxg1'>举报通过</button>
+    <button type="warn" style="margin-top:20rpx;margin-bottom:60rpx" bindtap='showgrxg'>举报失败</button>
+</view>

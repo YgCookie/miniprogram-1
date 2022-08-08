@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "couse":"../../pages/gl/gl",
+    "couse1":"../../pages/gl1/gl1",
+    "couse2":"../../pages/gl2/gl2",
+    "couse3":"../../pages/gl3/gl3"
+  },
+  "enablePullDownRefresh": true
+}
