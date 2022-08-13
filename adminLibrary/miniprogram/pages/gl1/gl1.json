@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "ec-canvas": "../../components/ec-canvas/ec-canvas"
-  },
-  "enablePullDownRefresh": true
-}
